@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69AB08562B32DAFC00F3F377 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AB08552B32DAFC00F3F377 /* Splash.swift */; };
+		69AB08582B32DB3900F3F377 /* Nmigif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 69AB08572B32DB3900F3F377 /* Nmigif.gif */; };
 		A6F1798E2B32D1DE00104141 /* Nammi_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1798D2B32D1DE00104141 /* Nammi_projectApp.swift */; };
 		A6F179902B32D1DE00104141 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1798F2B32D1DE00104141 /* ContentView.swift */; };
 		A6F179922B32D1DF00104141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F179912B32D1DF00104141 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69AB08552B32DAFC00F3F377 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		69AB08572B32DB3900F3F377 /* Nmigif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Nmigif.gif; sourceTree = "<group>"; };
 		A6F1798A2B32D1DE00104141 /* Nammi,project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nammi,project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F1798D2B32D1DE00104141 /* Nammi_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nammi_projectApp.swift; sourceTree = "<group>"; };
 		A6F1798F2B32D1DE00104141 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 				A6F1798D2B32D1DE00104141 /* Nammi_projectApp.swift */,
 				A6F1798F2B32D1DE00104141 /* ContentView.swift */,
 				A6F1799B2B32D23F00104141 /* onboarding2.swift */,
+				69AB08552B32DAFC00F3F377 /* Splash.swift */,
+				69AB08572B32DB3900F3F377 /* Nmigif.gif */,
 				A6F179912B32D1DF00104141 /* Assets.xcassets */,
 				A6F179932B32D1DF00104141 /* Preview Content */,
 			);
@@ -130,6 +136,7 @@
 			files = (
 				A6F179952B32D1DF00104141 /* Preview Assets.xcassets in Resources */,
 				A6F179922B32D1DF00104141 /* Assets.xcassets in Resources */,
+				69AB08582B32DB3900F3F377 /* Nmigif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +149,7 @@
 			files = (
 				A6F179902B32D1DE00104141 /* ContentView.swift in Sources */,
 				A6F1799C2B32D23F00104141 /* onboarding2.swift in Sources */,
+				69AB08562B32DAFC00F3F377 /* Splash.swift in Sources */,
 				A6F1798E2B32D1DE00104141 /* Nammi_projectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
