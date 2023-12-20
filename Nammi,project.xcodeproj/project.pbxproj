@@ -11,6 +11,7 @@
 		A6F179902B32D1DE00104141 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1798F2B32D1DE00104141 /* ContentView.swift */; };
 		A6F179922B32D1DF00104141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F179912B32D1DF00104141 /* Assets.xcassets */; };
 		A6F179952B32D1DF00104141 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F179942B32D1DF00104141 /* Preview Assets.xcassets */; };
+		A6F1799C2B32D23F00104141 /* onboarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1799B2B32D23F00104141 /* onboarding2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A6F1798F2B32D1DE00104141 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A6F179912B32D1DF00104141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6F179942B32D1DF00104141 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6F1799B2B32D23F00104141 /* onboarding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboarding2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				A6F1798D2B32D1DE00104141 /* Nammi_projectApp.swift */,
 				A6F1798F2B32D1DE00104141 /* ContentView.swift */,
+				A6F1799B2B32D23F00104141 /* onboarding2.swift */,
 				A6F179912B32D1DF00104141 /* Assets.xcassets */,
 				A6F179932B32D1DF00104141 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F179902B32D1DE00104141 /* ContentView.swift in Sources */,
+				A6F1799C2B32D23F00104141 /* onboarding2.swift in Sources */,
 				A6F1798E2B32D1DE00104141 /* Nammi_projectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
