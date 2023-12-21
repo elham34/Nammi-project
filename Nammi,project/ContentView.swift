@@ -83,7 +83,11 @@ struct ContentView: View {
                         .keyboardType(.numberPad)
                         .cornerRadius(10)
                         .offset(CGSize(width: -10, height: -30))
-                    
+                        .onChange(of: height){
+                            var isNormal = calculateHealth()
+                            isNormalBMI = isNormal
+                            
+                        }
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .offset(CGSize(width: 10, height: -30))
@@ -98,33 +102,65 @@ struct ContentView: View {
                         .offset(CGSize(width: 130, height: -80))
                     
                     
-                    
-                    Button(action: {
-                        let isNormal = calculateHealth()
-                        isNormalBMI = isNormal
-                    }) {
-                        Text("اظهر النناذج")
-                            .frame(width: 200, height: 20)
-                            .font(.system(size: 25))
-                            .padding()
-                            .background(Color.e3)
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
-                            .shadow(radius: 3)
-                            .offset(CGSize(width: -5, height: -50))
-                    }
-                    
-                    
                     if result == "طبيعي" {
-                        
-                        Safe()
-                       
-                           
-                    } else if result == "غير طبيعي" {
-                        notsafe()
-                       
-                          
+//                        Button(
+//                            action: {
+                            //    //                        let isNormal = calculateHealth()
+                            //    //                        isNormalBMI = isNormal
+                            //
+                            //                        })
+                            NavigationLink (destination:  Safe()) {
+                                Text("اظهر النناذج")
+                                    .frame(width: 200, height: 20)
+                                    .font(.system(size: 25))
+                                    .padding()
+                                    .background(Color.e3)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(8)
+                                    .shadow(radius: 3)
+                                    .offset(CGSize(width: -5, height: -50))
+                            }
+                        }
+                    else if result == "غير طبيعي" {
+//                        Button(action: {
+//    //                        let isNormal = calculateHealth()
+//    //                        isNormalBMI = isNormal
+//                            
+//                        }) 
+                        NavigationLink (destination: notsafe()){
+                            Text("اظهر النناذج")
+                                .frame(width: 200, height: 20)
+                                .font(.system(size: 25))
+                                .padding()
+                                .background(Color.e3)
+                                .foregroundColor(.white)
+                                .cornerRadius(8)
+                                .shadow(radius: 3)
+                                .offset(CGSize(width: -5, height: -50))
+                        }
                     }
+                    else{
+//                        Text("الرجاء إدخال قيم صحيحة.")
+//                        NavigationLink (destination: notsafe()){
+                            Text("إدخال")
+                                .frame(width: 200, height: 20)
+                                .font(.system(size: 25))
+                                .padding()
+                                .background(Color.e3)
+                                .foregroundColor(.white)
+                                .cornerRadius(8)
+                                .shadow(radius: 3)
+                                .offset(CGSize(width: -5, height: -50))
+//                        }
+                    }
+                    
+//                    if result == "طبيعي" {
+//                        
+//                        Safe()
+//                    } else if result == "غير طبيعي" {
+//                        notsafe()
+//                    }
+                    
                     //            else {
                     //                          Text(result)
                     //                              .foregroundColor(result.contains("Not valid") ? .red : .black)
