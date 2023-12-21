@@ -19,7 +19,7 @@ struct notsafe: View {
             VStack {
                 Text("نتائج طفلك هي")
                     .font(.title)
-                    .foregroundColor(.green)
+                    .foregroundColor(.font)
                     .offset(CGSize(width: 0, height: -40))
 
                 
@@ -77,7 +77,7 @@ struct notsafe: View {
 
                     
                     Text("ننصحك بالتواصل مع وزارة الصحة")
-                        .foregroundColor(.green)
+                        .foregroundColor(.font)
                         .bold()
                         .font(.system(size: 15))
                         .font(.headline)

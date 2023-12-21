@@ -20,7 +20,7 @@ struct Safe: View {
             VStack {
                 Text("نتائج طفلك هي")
                     .font(.title)
-                    .foregroundColor(.green)
+                    .foregroundColor(.font)
                     .padding()
                 
                 if value >= 18 && value <= 24 {

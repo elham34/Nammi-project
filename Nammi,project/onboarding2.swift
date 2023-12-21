@@ -19,9 +19,9 @@ struct onboarding2: View {
 //                  .offset(CGSize(width: 150, height: 30))
 //                  .foregroundColor(.we8)
                   
-//                  NavigationLink(destination: ContentView(), isActive: $isactive) {  // Change here
-//                      EmptyView()
-//                  }
+            //    NavigationLink(destination: ContentView(), isActive: $isactive) {  // Change here
+                    //EmptyView()
+                // }
                   NavigationLink {
                       // destination view to navigation to
                       ContentView()
