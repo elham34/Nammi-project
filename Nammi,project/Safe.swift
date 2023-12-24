@@ -9,8 +9,10 @@ import SwiftUI
 
 struct Safe: View {
     @State private var value: Int = 20
-    @State private var results: String = "سليم"
+    @State private var results: String = "Safe"
     @State private var currentPage: Int = 2
+    
+   
     
     var body: some View {
         ZStack {
@@ -18,7 +20,7 @@ struct Safe: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Text("نتائج طفلك هي")
+                Text("Safe1")
                     .font(.title)
                     .foregroundColor(.font)
                     .padding()

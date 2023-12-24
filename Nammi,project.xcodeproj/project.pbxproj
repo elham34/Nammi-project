@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		69AB08562B32DAFC00F3F377 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AB08552B32DAFC00F3F377 /* Splash.swift */; };
 		69AB08582B32DB3900F3F377 /* Nmigif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 69AB08572B32DB3900F3F377 /* Nmigif.gif */; };
+		69AB08842B342D3900F3F377 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69AB08862B342D3900F3F377 /* Localizable.strings */; };
+		69AB08892B343EDD00F3F377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AB08882B343EDD00F3F377 /* ViewController.swift */; };
+		69AB088D2B34FF3E00F3F377 /* nammi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 69AB088C2B34FF3E00F3F377 /* nammi.gif */; };
 		A6F1798E2B32D1DE00104141 /* Nammi_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1798D2B32D1DE00104141 /* Nammi_projectApp.swift */; };
 		A6F179902B32D1DE00104141 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1798F2B32D1DE00104141 /* ContentView.swift */; };
 		A6F179922B32D1DF00104141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F179912B32D1DF00104141 /* Assets.xcassets */; };
@@ -21,6 +24,10 @@
 /* Begin PBXFileReference section */
 		69AB08552B32DAFC00F3F377 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 		69AB08572B32DB3900F3F377 /* Nmigif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Nmigif.gif; sourceTree = "<group>"; };
+		69AB08852B342D3900F3F377 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		69AB08872B342D6600F3F377 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		69AB08882B343EDD00F3F377 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69AB088C2B34FF3E00F3F377 /* nammi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = nammi.gif; sourceTree = "<group>"; };
 		A6F1798A2B32D1DE00104141 /* Nammi,project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nammi,project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F1798D2B32D1DE00104141 /* Nammi_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nammi_projectApp.swift; sourceTree = "<group>"; };
 		A6F1798F2B32D1DE00104141 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,13 +68,16 @@
 		A6F1798C2B32D1DE00104141 /* Nammi,project */ = {
 			isa = PBXGroup;
 			children = (
+				69AB08862B342D3900F3F377 /* Localizable.strings */,
+				69AB08552B32DAFC00F3F377 /* Splash.swift */,
+				A6F1798F2B32D1DE00104141 /* ContentView.swift */,
+				A6F1799B2B32D23F00104141 /* onboarding2.swift */,
 				B33CE3AC2B32E4840020B324 /* Safe.swift */,
 				B33CE3AA2B32E4200020B324 /* notsafe.swift */,
 				A6F1798D2B32D1DE00104141 /* Nammi_projectApp.swift */,
-				A6F1798F2B32D1DE00104141 /* ContentView.swift */,
-				A6F1799B2B32D23F00104141 /* onboarding2.swift */,
-				69AB08552B32DAFC00F3F377 /* Splash.swift */,
+				69AB08882B343EDD00F3F377 /* ViewController.swift */,
 				69AB08572B32DB3900F3F377 /* Nmigif.gif */,
+				69AB088C2B34FF3E00F3F377 /* nammi.gif */,
 				A6F179912B32D1DF00104141 /* Assets.xcassets */,
 				A6F179932B32D1DF00104141 /* Preview Content */,
 			);
@@ -124,6 +134,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = A6F179812B32D1DE00104141;
 			productRefGroup = A6F1798B2B32D1DE00104141 /* Products */;
@@ -141,8 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F179952B32D1DF00104141 /* Preview Assets.xcassets in Resources */,
+				69AB08842B342D3900F3F377 /* Localizable.strings in Resources */,
 				A6F179922B32D1DF00104141 /* Assets.xcassets in Resources */,
 				69AB08582B32DB3900F3F377 /* Nmigif.gif in Resources */,
+				69AB088D2B34FF3E00F3F377 /* nammi.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +170,7 @@
 				A6F1799C2B32D23F00104141 /* onboarding2.swift in Sources */,
 				B33CE3AB2B32E4200020B324 /* notsafe.swift in Sources */,
 				69AB08562B32DAFC00F3F377 /* Splash.swift in Sources */,
+				69AB08892B343EDD00F3F377 /* ViewController.swift in Sources */,
 				B33CE3AD2B32E4840020B324 /* Safe.swift in Sources */,
 				A6F1798E2B32D1DE00104141 /* Nammi_projectApp.swift in Sources */,
 			);
@@ -164,12 +178,25 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		69AB08862B342D3900F3F377 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69AB08852B342D3900F3F377 /* en */,
+				69AB08872B342D6600F3F377 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		A6F179962B32D1DF00104141 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -233,6 +260,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

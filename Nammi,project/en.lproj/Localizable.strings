@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  Nammi,project
+
+  Created by Ghadah Albassam on 21/12/2023.
+  
+*/
+
+// Content View
+"Type your child's age1" = "Type your child's age" ;
+"Age1" = "Age";
+"Type your child's weight1" = "Type your child's weight";
+"Weight1" = "Weight (kg)";
+"Type your child's height1" = "Type your child's height";
+"Height1" = "Height (cm)";
+"Show results1" = "Show results";
+"Please enter valid values1" = "Please enter valid values.";
+"body mass index1" = "body mass index";
+"Normal1" = "Normal";
+"Abnormal1" = "Abnormal" ;
+
+// Onboarding
+
+"Skip1" = "Skip";
+"Disc1" = "An App that helps parents who want to monitor their children's healthy growth by auto generating measurement results";
+"Disc2" = "Early detection of the child's normal development may provide a higher and faster chance of treatment comoaared to lat detection";
+"Start1" = "Start";
+
+//Safe
+
+"Safe1" = "Safe";
+"Your child's results are1" = "Your child's results are";
+
+//NotSafe
+
+"NotSafe1" = "Not Safe";
+"MOH1" = "Your child's growth is not healthy. Please contact the Ministry of Health and ask experts to monitor your child's healthy growth.";
+"MOH2" = "We advise you to contact the Ministry of Health";
+
+
+

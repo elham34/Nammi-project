@@ -11,13 +11,15 @@ struct notsafe: View {
     @State private var value: Int = 20
     @State private var currentPage: Int = 2
     
+
+    
     var body: some View {
         ZStack {
             Color.white
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Text("نتائج طفلك هي")
+                Text("Your child's results are1")
                     .font(.title)
                     .foregroundColor(.font)
                     .offset(CGSize(width: 0, height: -40))
@@ -29,7 +31,7 @@ struct notsafe: View {
                     .offset(CGSize(width: 0, height: 10))
 
                 
-                Text("غير سليم")
+                Text("NotSafe1")
                     .font(.title)
                     .foregroundColor(.red)
                     .offset(CGSize(width: 0, height: 20))
@@ -69,14 +71,14 @@ struct notsafe: View {
                         .padding(.vertical, 250)
                         .padding(.horizontal,-100)
                     
-                    Text("نمو طفلك غير سليم، الرجاء التواصل مع وزارة الصحة\nوسؤال ذوي الخبره لمتابعه نمو طفلك بشكل سليم")
+                    Text("MOH1")
                         .foregroundColor(.b1)
                         .font(.system(size: 15))
                         .font(.caption)
                         .offset(CGSize(width: 0, height: 9))
 
                     
-                    Text("ننصحك بالتواصل مع وزارة الصحة")
+                    Text("MOH2")
                         .foregroundColor(.font)
                         .bold()
                         .font(.system(size: 15))

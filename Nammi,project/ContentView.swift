@@ -8,13 +8,15 @@ struct ContentView: View {
     @State private var isNormalBMI: Bool = false
     @State var isDone = false
     
+ 
+    
     var body: some View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false)
             {
                 VStack {
                     
-                    Image("r5")
+                    Image("nammi 1")
                         .offset(CGSize(width: 10.0, height: -40))
                     ZStack {
                         Rectangle()
@@ -22,13 +24,13 @@ struct ContentView: View {
                             .foregroundColor(Color.white) // تحديد لون المربع
                             .cornerRadius(10) // تحديد نصف قطر الزوايا لتكون مرئية
                         
-                        Text("اكتب عمر طفلك")
+                        Text("Type your child's age1")
                             .foregroundColor(Color.font) // تحديد لون النص
                     }
                     .offset(CGSize(width: -100, height: -50))
                     
                     
-                    TextField("العمر", text: $age)
+                    TextField("Age1", text: $age)
                     
                         .padding()
                         .keyboardType(.numberPad)
@@ -51,11 +53,11 @@ struct ContentView: View {
                             .foregroundColor(Color.white) // تحديد لون المربع
                             .cornerRadius(10) // تحديد نصف قطر الزوايا لتكون مرئية
                         
-                        Text("اكتب وزن طفلك")
+                        Text("Type your child's weight1")
                             .foregroundColor(Color.font) // تحديد لون النص
                     }
                     .offset(CGSize(width: -100, height: -40))
-                    TextField("الوزن (كجم)", text: $weight)
+                    TextField("Weight1", text: $weight)
                         .padding()
                         .keyboardType(.numberPad)
                         .cornerRadius(10)
@@ -74,11 +76,11 @@ struct ContentView: View {
                             .foregroundColor(Color.white) // تحديد لون المربع
                             .cornerRadius(10) // تحديد نصف قطر الزوايا لتكون مرئية
                         
-                        Text("اكتب طول طفلك")
+                        Text("Type your child's height1")
                             .foregroundColor(Color.font) // تحديد لون النص
                     }
                     .offset(CGSize(width: -100, height: -25))
-                    TextField("الطول (سم)", text: $height)
+                    TextField("Height1", text: $height)
                         .padding()
                         .keyboardType(.numberPad)
                         .cornerRadius(10)
@@ -102,7 +104,7 @@ struct ContentView: View {
                         .offset(CGSize(width: 130, height: -80))
                     
                     
-                    if result == "طبيعي" {
+                    if result == "Normal" {
 //                        Button(
 //                            action: {
                             //    //                        let isNormal = calculateHealth()
@@ -110,7 +112,7 @@ struct ContentView: View {
                             //
                             //                        })
                             NavigationLink (destination:  Safe()) {
-                                Text("اظهر النناذج")
+                                Text("Show results1")
                                     .frame(width: 200, height: 20)
                                     .font(.system(size: 25))
                                     .padding()
@@ -121,14 +123,14 @@ struct ContentView: View {
                                     .offset(CGSize(width: -5, height: -50))
                             }
                         }
-                    else if result == "غير طبيعي" {
+                    else if result == "Abnormal" {
 //                        Button(action: {
 //    //                        let isNormal = calculateHealth()
 //    //                        isNormalBMI = isNormal
 //                            
 //                        }) 
                         NavigationLink (destination: notsafe()){
-                            Text("اظهر النناذج")
+                            Text("Show results1" )
                                 .frame(width: 200, height: 20)
                                 .font(.system(size: 25))
                                 .padding()
@@ -142,7 +144,7 @@ struct ContentView: View {
                     else{
 //                        Text("الرجاء إدخال قيم صحيحة.")
 //                        NavigationLink (destination: notsafe()){
-                            Text("إدخال")
+                            Text("Show results1" )
                                 .frame(width: 200, height: 20)
                                 .font(.system(size: 25))
                                 .padding()
@@ -170,7 +172,7 @@ struct ContentView: View {
                 .padding()
                 .onTapGesture {
                     hideKeyboard()
-                }      .environment(\.layoutDirection,.rightToLeft)
+                }    //  .environment(\.layoutDirection,.rightToLeft)
                     .padding()
             }}
         
@@ -182,13 +184,13 @@ struct ContentView: View {
               let heightValue = Double(height),
               let weightValue = Double(weight)
         else {
-            result = "الرجاء إدخال قيم صحيحة."
+            result = " Please enter valid values."
             return false
         }
 
         let bmi = weightValue / ((heightValue / 100) * (heightValue / 100))
 
-        result = (bmi < 18.5 || bmi > 24.9) ? "غير طبيعي" : "طبيعي"
+        result = (bmi < 18.5 || bmi > 24.9) ? "Abnormal" : "Normal"
         
         return bmi < 18.5 || bmi > 24.9
     }

@@ -4,6 +4,8 @@ struct onboarding2: View {
   
   @State private var isactive: Bool = false  // Change here
   
+    
+    
   var body: some View {
       NavigationView {
           
@@ -27,7 +29,7 @@ struct onboarding2: View {
                       ContentView()
                           .navigationBarHidden(true)
                   } label: {
-                      Text("تخطي")
+                      Text("Skip1")
                           .foregroundColor(.font)
                   }.font(.system(size: 25))
                       .font(.title)
@@ -47,7 +49,7 @@ struct onboarding2: View {
                                   .padding(.vertical, -150)
                                   .padding(.horizontal, -150)
                               
-                              Text("تطبيق يساعد الآباء الراغبين في متابعة نمو اطفالهم بصحة جيدة من خلال انشاء نتائج القياس تلقائيا ")
+                              Text("Disc1")
                                   .foregroundColor(.s2)
                                   .font(.system(size: 20))
                                   .font(.title)
@@ -66,7 +68,7 @@ struct onboarding2: View {
                               Image("t6")
                                   .offset(CGSize(width: 1, height: -130))
                               
-                              Text(" الكشف المبكر على النمو الطبيعي للطفل قد يتيح فرصة للعلاج بنسبة أعلى وأسرع مقارنةً بالكشف المتأخر.")
+                              Text("Disc2")
                                   .foregroundColor(.s2)
                                   .font(.system(size: 20))
                                   .font(.body)
@@ -88,14 +90,14 @@ struct onboarding2: View {
                                       .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
                                       .offset(CGSize(width: -1, height: -10))
                                   
-                                  Text(" ابدأ ")
+                                  Text("Start1")
                                       .foregroundColor(.s2)
                                       .font(.system(size: 100))
                                       .font(.body)
                                       .offset(CGSize(width: 1, height: 5))
                               }
                           }}}
-                  .environment(\.layoutDirection, .rightToLeft)
+                //  .environment(\.layoutDirection, .rightToLeft)
               }
               .tabViewStyle(PageTabViewStyle())
               .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
