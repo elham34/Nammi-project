@@ -99,9 +99,9 @@ struct ContentView: View {
                         )
                     Image(systemName: "camera.viewfinder")
                     
-                        .foregroundColor(.gray)
-                        .font(.system(size: 30))
-                        .offset(CGSize(width: 130, height: -80))
+                         .foregroundColor(.gray)
+                         .font(.system(size: 30))
+                         .offset(CGSize(width: 130, height: -80))
                     
                     
                     if result == "Normal" {
